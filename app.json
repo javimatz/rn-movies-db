@@ -1,0 +1,12 @@
+{
+  "name": "rn-movie-db",
+  "displayName": "rn-movie-db",
+  "expo": {
+    "name": "rn-movie-db",
+    "slug": "rn-movie-db",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
