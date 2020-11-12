@@ -16,6 +16,7 @@ const AppNavigator = () => {
       initialRouteName='Home'
       screenOptions={{
         headerTitle: false,
+        headerTransparent: true,
         headerBackTitleVisible: false,
         headerShown: false
       }}
