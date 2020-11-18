@@ -6,7 +6,7 @@ import MoviesScreen from './src/screens/MoviesScreen'
 
 const App = () => {
   return (
-    <MovieDetailsScreen />
+    <MoviesScreen />
   );
 }
 
