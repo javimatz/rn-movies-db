@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, FlatList, Image } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, FlatList, Image } from 'react-native';
 
 import movieDetails from '../utils/movieDetails.json'
 import movieCast from '../utils/movieCredits.json'
@@ -9,6 +9,7 @@ import movieRecommendations from '../utils/movieRecommendations.json'
 
 const apiImagesURL = 'https://image.tmdb.org/t/p/w500'
 const youtubeURL = 'https://www.youtube.com/watch?v=BdJKm16Co6M'
+
 // API URL/movie/movieID
 const title = movieDetails.original_title
 const rate = movieDetails.vote_average
@@ -31,19 +32,22 @@ const movieImg = movieImages.backdrops
 const movieRecom = movieRecommendations.results 
 
 
-const style = {
+const style = StyleSheet.create({
   view: {
     paddingTop: 30
   },
   img: {
     height: 200,
     width: 100
+  },
+  list: {
+  	height: 100
   }
-}
+})
 
 const MovieDetailsScreen = () => {
   return (
-    <View style={style.view}>
+    <ScrollView style={style.view}>
     	<Image source={{uri: poster}} style={style.img} />
 		<Text>{title}</Text>
 		<Text>{rate}</Text>
@@ -51,9 +55,11 @@ const MovieDetailsScreen = () => {
 
 
 		<FlatList
+			style = {style.list}
 			data={tags}
 			renderItem={({item}) => <Text>{item.name}</Text>}
 			keyExtractor = { (item) => item.id.toString() }
+			horizontal
 		/>
 
 		<Text>Overview</Text>
@@ -71,6 +77,7 @@ const MovieDetailsScreen = () => {
 				)
 			}}
 			keyExtractor={ (item) => item.id.toString()}
+			horizontal
 		/>
 
 		<Text>Images</Text>
@@ -84,6 +91,7 @@ const MovieDetailsScreen = () => {
 				)
 			}}
 			keyExtractor={(item) => Math.random().toString() }
+			horizontal
 		/>
 
 	    <Text>Recommendations</Text>
@@ -98,8 +106,9 @@ const MovieDetailsScreen = () => {
 	    		)
 	    	}}
 	    	keyExtractor = {(item) => item.id.toString() }
+	    	horizontal
 	    />
-    </View>
+    </ScrollView>
   );
 }
 
