@@ -1,12 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, FlatList, Image } from 'react-native';
-import MovieDetailsScreen from './src/screens/MovieDetailsScreen'
+import { ScrollView, StatusBar, StyleSheet, View } from 'react-native';
+
+// Screens
 import MoviesScreen from './src/screens/MoviesScreen'
+import MovieDetailsScreen from './src/screens/MovieDetailsScreen'
+
+const style = StyleSheet.create({
+  appContainer: {
+    backgroundColor: '#FFF',
+    flex: 1,
+    paddingTop: StatusBar.currentHeight,
+  }
+})
 
 const App = () => {
   return (
-    <MoviesScreen />
+  	<ScrollView style={style.appContainer}>
+        <StatusBar backgroundColor="#333"  />
+        <MovieDetailsScreen />
+    </ScrollView>
   );
 }
 
