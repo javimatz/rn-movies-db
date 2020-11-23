@@ -2,7 +2,7 @@ import React from 'react';
 import { ImageBackground, StyleSheet, useWindowDimensions, Text } from 'react-native';
 
 
-import movieDetails from '../utils/movieDetails.json'
+import movieDetails from '../../utils/movieDetails.json'
 
 // Images API
 const apiImagesURL = 'https://image.tmdb.org/t/p/w500'

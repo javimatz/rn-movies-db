@@ -1,7 +1,7 @@
 import React from 'react';
 import { FlatList, StyleSheet, Text } from 'react-native';
 
-import movieDetails from '../utils/movieDetails.json'
+import movieDetails from '../../utils/movieDetails.json'
 
 const tags = movieDetails.genres
 

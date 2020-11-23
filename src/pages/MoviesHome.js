@@ -2,9 +2,9 @@ import React from 'react';
 import { ScrollView, StyleSheet, View } from 'react-native';
 
 // Components
-import ImageCardList from '../components/ImageCardList'
-import HeaderTitle from '../components/HeaderTitle'
-import Navbar from '../components/Navbar'
+import ImageCardList from '../components/common/ImageCardList'
+import HeaderTitle from '../components/common/HeaderTitle'
+import Navbar from '../components/MoviesHome/Navbar'
 
 // Movies JSON Data
 import popularMovies from '../utils/popular.json'

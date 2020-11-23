@@ -4,11 +4,12 @@ import { ScrollView, StyleSheet, View } from 'react-native';
 
 
 // Components
-import ImageCardList from '../components/ImageCardList'
-import PosterBackground from '../components/PosterBackground'
-import Overview from '../components/Overview'
-import TagList from '../components/TagList'
-import MovieImagesList from '../components/MovieImagesList'
+import ImageCardList from '../components/common/ImageCardList'
+import CastingList from '../components/MovieDetail/CastingList'
+import PosterBackground from '../components/MovieDetail/PosterBackground'
+import Overview from '../components/MovieDetail/Overview'
+import TagList from '../components/common/TagList'
+import MovieImagesList from '../components/MovieDetail/MovieImagesList'
 
 // API data
 import movieDetails from '../utils/movieDetails.json'
@@ -43,7 +44,7 @@ const MovieDetailsScreen = () => {
 			<PosterBackground />
 			<TagList />			        
 			<Overview text={overview} />
-			<ImageCardList title='Casting' data={casting} imageWithTitle />
+			<CastingList title='Casting' data={casting} imageWithTitle />
 			<MovieImagesList />
 			<ImageCardList title='Recommendations' data={movieRecom} imageWithTitle />
 		</ScrollView>

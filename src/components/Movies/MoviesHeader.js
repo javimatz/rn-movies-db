@@ -1,8 +1,8 @@
 import React from 'react';
 import {StyleSheet, View } from 'react-native';
 
-import BackButton from './BackButton';
-import HeaderTitle from './HeaderTitle';
+import BackButton from '../common/BackButton';
+import HeaderTitle from '../common/HeaderTitle';
 
 const style = StyleSheet.create({
   

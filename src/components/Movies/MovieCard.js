@@ -1,7 +1,7 @@
 import React from 'react';
 import { Image, StyleSheet, Text, View } from 'react-native';
 
-import TagList from './TagList';
+import TagList from '../common/TagList';
 
 const style = StyleSheet.create({
 	img: {
