@@ -2,8 +2,9 @@ import React from 'react';
 import { ScrollView, StatusBar, StyleSheet, View } from 'react-native';
 
 // Screens
-import Movies from './src/pages/MoviesHome'
+import MoviesHome from './src/pages/MoviesHome'
 import MovieDetail from './src/pages/MovieDetail'
+import Movies from './src/pages/Movies'
 
 const style = StyleSheet.create({
   appContainer: {
@@ -15,10 +16,10 @@ const style = StyleSheet.create({
 
 const App = () => {
   return (
-  	<ScrollView style={style.appContainer}>
+  	<View style={style.appContainer}>
         <StatusBar backgroundColor="#333"  />
-        <Movies />
-    </ScrollView>
+        <MovieDetail />
+    </View>
   );
 }
 

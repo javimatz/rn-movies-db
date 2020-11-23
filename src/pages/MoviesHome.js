@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { ScrollView, StyleSheet, View } from 'react-native';
 
 // Components
 import ImageCardList from '../components/ImageCardList'
@@ -27,13 +27,13 @@ const MoviesHome = () => {
   const discover = discoverMovies.results
   
   return (
-      <View style={style.screenContainer}>
+      <ScrollView style={style.screenContainer}>
         <Navbar />
         <HeaderTitle />
         <ImageCardList title='Popular' data={popular} />
         <ImageCardList title='Top Rated' data={top} />
         <ImageCardList title='Must Watch' data={discover} />
-      </View>
+      </ScrollView>
   );
 }
 

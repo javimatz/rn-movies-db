@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { ScrollView, StyleSheet, View } from 'react-native';
 
 
 // Components
@@ -39,14 +39,14 @@ const style = StyleSheet.create({
 
 const MovieDetailsScreen = () => {	
 	return (
-		<View style={style.screenContainer}>	
+		<ScrollView style={style.screenContainer}>	
 			<PosterBackground />
 			<TagList />			        
 			<Overview text={overview} />
 			<ImageCardList title='Casting' data={casting} imageWithTitle />
 			<MovieImagesList />
 			<ImageCardList title='Recommendations' data={movieRecom} imageWithTitle />
-		</View>
+		</ScrollView>
 
 	);
 }
