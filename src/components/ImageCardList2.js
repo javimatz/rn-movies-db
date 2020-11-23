@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { FlatList, Image, StyleSheet, Text, View, } from 'react-native';
-
+import CardListMenu from './CardListMenu'
 
 const style = StyleSheet.create({
   listTitle: {
@@ -20,7 +20,7 @@ const style = StyleSheet.create({
   }
 })
 
-const ImageList = ({title, data, imageWithTitle}) => {
+const ImageCardList = ({title, data, imageWithTitle}) => {
 
   // Images API
   const url = 'https://image.tmdb.org/t/p/w500/'
@@ -28,6 +28,7 @@ const ImageList = ({title, data, imageWithTitle}) => {
   let imgTitle = ''
   return (
   	<View>
+      <CardListMenu />
 	  	<Text style={style.listTitle} >{title}</Text>
   		<FlatList
   		  data={data}
@@ -57,4 +58,4 @@ const ImageList = ({title, data, imageWithTitle}) => {
   );
 }
 
-export default ImageList
+export default ImageCardList

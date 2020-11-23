@@ -2,14 +2,14 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 
 // Components
-import ImageList from '../components/ImageList'
+import ImageCardList from '../components/ImageCardList'
 import HeaderTitle from '../components/HeaderTitle'
+import Navbar from '../components/Navbar'
 
 // Movies JSON Data
 import popularMovies from '../utils/popular.json'
 import topMovies from '../utils/topMovies.json'
 import discoverMovies from '../utils/discoverMovies.json'
-import movieRecommendations from '../utils/movieRecommendations.json'
 
 
 const style = StyleSheet.create({
@@ -19,23 +19,22 @@ const style = StyleSheet.create({
   },
 })
 
-const MoviesScreen = () => {
+const MoviesHome = () => {
   
   // Movies Lists
   const popular = popularMovies.results
   const top = topMovies.results
   const discover = discoverMovies.results
-  const movieRecom = movieRecommendations.results 
-
+  
   return (
       <View style={style.screenContainer}>
+        <Navbar />
         <HeaderTitle />
-        <ImageList title='Popular' data={popular} />
-        <ImageList title='Top Rated' data={top} />
-        <ImageList title='Must Watch' data={discover} />
-        <ImageList title='Recomm' data={movieRecom} />
+        <ImageCardList title='Popular' data={popular} />
+        <ImageCardList title='Top Rated' data={top} />
+        <ImageCardList title='Must Watch' data={discover} />
       </View>
   );
 }
 
-export default MoviesScreen
+export default MoviesHome

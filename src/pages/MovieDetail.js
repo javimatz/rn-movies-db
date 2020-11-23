@@ -4,7 +4,7 @@ import { StyleSheet, View } from 'react-native';
 
 
 // Components
-import ImageList from '../components/ImageList'
+import ImageCardList from '../components/ImageCardList'
 import PosterBackground from '../components/PosterBackground'
 import Overview from '../components/Overview'
 import TagList from '../components/TagList'
@@ -43,9 +43,9 @@ const MovieDetailsScreen = () => {
 			<PosterBackground />
 			<TagList />			        
 			<Overview text={overview} />
-			<ImageList title='Casting' data={casting} imageWithTitle />
+			<ImageCardList title='Casting' data={casting} imageWithTitle />
 			<MovieImagesList />
-			<ImageList title='Recommendations' data={movieRecom} imageWithTitle />
+			<ImageCardList title='Recommendations' data={movieRecom} imageWithTitle />
 		</View>
 
 	);
