@@ -6,13 +6,13 @@ import TagList from '../common/TagList';
 const style = StyleSheet.create({
 	img: {
     	borderRadius: 10,
-    	height: 200,
+    	height: 150,
     	margin: 5,
-    	width: 120,
+    	width: 100,
   	},
 })
 
-const MovieCard = ({posterPath}) => {
+const MovieCard = ({ posterPath, movieTitle }) => {
   
   // Images API
   const url = 'https://image.tmdb.org/t/p/w500/'
@@ -20,8 +20,8 @@ const MovieCard = ({posterPath}) => {
   return (
   	<View>
   		<Image source={{ uri: url.concat(posterPath) }} style={style.img} />
-        <Text>cardTitle</Text>
-        <Text>rate</Text>
+        <Text style={{ fontSize: 16, fontWeight: 'bold' }}>{ movieTitle }</Text>
+        <Text style={{ fontSize: 16, fontWeight: 'bold' }}>8.3</Text>
         <TagList />
     </View>
   );

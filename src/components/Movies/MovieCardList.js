@@ -18,7 +18,12 @@ const MovieCardList = () => {
   	<View>
         <FlatList 
         	data = { moviesList }
-        	renderItem = { ({item}) => <MovieCard posterPath ={item.poster_path} /> }
+        	renderItem = { ({item}) => 
+        		<MovieCard 
+        			posterPath={item.poster_path}
+        			movieTitle={item.original_title}
+        		/> 
+        	}
         	keyExtractor = { (item) => item.id.toString() }
         />
     </View>
