@@ -1,5 +1,7 @@
 import React from 'react';
-import { Button, ScrollView, StyleSheet, View } from 'react-native';
+import { ScrollView, StyleSheet, Text, TouchableWithoutFeedback, View } from 'react-native';
+
+import { Ionicons } from '@expo/vector-icons';
 
 const style = StyleSheet.create({
   
@@ -7,7 +9,9 @@ const style = StyleSheet.create({
 
 const BackButton = () => {
   return (
-  	<Button title='Back button' />
+	<TouchableWithoutFeedback>
+		<Ionicons name="ios-arrow-back" size={32} color="#000" />
+	</TouchableWithoutFeedback>
   );
 }
 

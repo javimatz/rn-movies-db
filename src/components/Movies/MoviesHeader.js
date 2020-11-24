@@ -12,7 +12,7 @@ const MoviesHeader = () => {
   return (
   	<View>
         <BackButton />
-        <HeaderTitle />
+        <HeaderTitle title='Must Watch TV Show' />
     </View>
   );
 }

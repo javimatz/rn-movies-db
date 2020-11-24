@@ -29,7 +29,7 @@ const MoviesHome = () => {
   return (
       <ScrollView style={style.screenContainer}>
         <Navbar />
-        <HeaderTitle />
+        <HeaderTitle title='Movies' />
         <ImageCardList title='Popular' data={popular} />
         <ImageCardList title='Top Rated' data={top} />
         <ImageCardList title='Must Watch' data={discover} />

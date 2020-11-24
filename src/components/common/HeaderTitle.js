@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react';
-import { StyleSheet, Text } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
 const style = StyleSheet.create({
   headerTitle: {
-    fontSize: 30,
+    fontSize: 22,
     fontWeight: 'bold',
-    paddingLeft: 5
+    paddingLeft: 5,
   },
   headerTitleBar: {
     backgroundColor: 'orange',
@@ -15,12 +15,12 @@ const style = StyleSheet.create({
   },
 })
 
-const HeaderTitle = () => {
+const HeaderTitle = ({ title }) => {
   return (
-     <Fragment>		
-     	<Text style = {style.headerTitle}>Movies</Text>
-     	<Text style={style.headerTitleBar} />
-     </Fragment>		
+    <View>		
+      <Text style = {style.headerTitle}>{title}</Text>
+    	<Text style = {style.headerTitleBar} />
+    </View>		
   );
 }
 
