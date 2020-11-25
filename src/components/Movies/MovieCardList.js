@@ -15,7 +15,12 @@ const style = StyleSheet.create({
 
 const MovieCardList = () => {
   return (
-  	<View>
+  	<View 
+      style={{
+      backgroundColor: 'red',
+      paddingHorizontal: 20, 
+      paddingVertical: 50
+    }}>
         <FlatList 
         	data = { moviesList }
         	renderItem = { ({item}) => 

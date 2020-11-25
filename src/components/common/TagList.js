@@ -1,5 +1,5 @@
 import React from 'react';
-import { FlatList, StyleSheet, Text } from 'react-native';
+import { FlatList, StyleSheet, Text, View } from 'react-native';
 
 // Components
 import TagItem from './TagItem'
@@ -16,7 +16,6 @@ const style = StyleSheet.create({
 const TagList = () => {
   return (
   	<FlatList
-		style = {style.list}
 		data={tags}
 		renderItem={({item}) => <TagItem tagName = {item.name} />}
 		keyExtractor = { (item) => item.id.toString() }

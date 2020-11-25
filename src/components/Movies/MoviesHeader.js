@@ -10,7 +10,11 @@ const style = StyleSheet.create({
 
 const MoviesHeader = () => {
   return (
-  	<View>
+  	<View style={{
+		display: 'flex',
+		flexDirection: 'row',
+		justifyContent: 'space-evenly'
+	}}>
         <BackButton />
         <HeaderTitle title='Must Watch TV Show' />
     </View>

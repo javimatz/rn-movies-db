@@ -17,7 +17,10 @@ const style = StyleSheet.create({
 
 const HeaderTitle = ({ title }) => {
   return (
-    <View>		
+    <View style={{
+      alignItems: 'center',
+      display: 'flex',
+    }}>		
       <Text style = {style.headerTitle}>{title}</Text>
     	<Text style = {style.headerTitleBar} />
     </View>		
