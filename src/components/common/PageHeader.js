@@ -10,11 +10,15 @@ const style = StyleSheet.create({
 const PageHeader = ({ children }) => {
   return (
   	<View style={{
-		display: 'flex',
-		flexDirection: 'row',
-		justifyContent: 'space-evenly'
-	}}>
-      <BackButton />    
+    	flexDirection: 'row',
+    	justifyContent: 'flex-start',
+      paddingLeft: 20
+    }}>
+      <BackButton 
+        style={{
+          backgroundColor: 'orange'
+        }}
+      />    
       {children}
     </View>
   );

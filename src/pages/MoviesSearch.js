@@ -20,8 +20,8 @@ const MoviesSearch = () => {
     	    	headerText="We'll help you find your favorite movies. Discover wonderfull movies." 
     	    />
   		</PageHeader>
-        <SearchForm />
-        <MovieCardList />
+      <SearchForm />
+      <MovieCardList />
     </View>
   );
 }

@@ -18,7 +18,7 @@ const Movies = () => {
     	    	headerTitle='Must Watch TV Show' 
     	    />
   		</PageHeader>
-        <MovieCardList />
+      <MovieCardList />
     </View>
   );
 }
