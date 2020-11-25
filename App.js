@@ -5,6 +5,7 @@ import { ScrollView, StatusBar, StyleSheet, View } from 'react-native';
 import MoviesHome from './src/pages/MoviesHome'
 import MovieDetail from './src/pages/MovieDetail'
 import Movies from './src/pages/Movies'
+import MoviesSearch from './src/pages/MoviesSearch'
 
 const style = StyleSheet.create({
   appContainer: {
@@ -18,7 +19,7 @@ const App = () => {
   return (
   	<View style={style.appContainer}>
         <StatusBar backgroundColor="#333"  />
-        <Movies />
+        <MoviesSearch />
     </View>
   );
 }

@@ -2,23 +2,22 @@ import React from 'react';
 import {StyleSheet, View } from 'react-native';
 
 import BackButton from '../common/BackButton';
-import HeaderTitle from '../common/HeaderTitle';
 
 const style = StyleSheet.create({
   
 })
 
-const MoviesHeader = () => {
+const PageHeader = ({ children }) => {
   return (
   	<View style={{
 		display: 'flex',
 		flexDirection: 'row',
 		justifyContent: 'space-evenly'
 	}}>
-        <BackButton />
-        <HeaderTitle title='Must Watch TV Show' />
+      <BackButton />    
+      {children}
     </View>
   );
 }
 
-export default MoviesHeader
+export default PageHeader

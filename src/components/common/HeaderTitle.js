@@ -15,14 +15,15 @@ const style = StyleSheet.create({
   },
 })
 
-const HeaderTitle = ({ title }) => {
+const HeaderTitle = ({ headerTitle, headerText }) => {
   return (
     <View style={{
       alignItems: 'center',
       display: 'flex',
     }}>		
-      <Text style = {style.headerTitle}>{title}</Text>
+      <Text style = {style.headerTitle}>{headerTitle}</Text>
     	<Text style = {style.headerTitleBar} />
+      { headerText && <Text>{headerText}</Text> }
     </View>		
   );
 }
