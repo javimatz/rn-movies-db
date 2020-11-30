@@ -10,15 +10,10 @@ const MovieCard = ({ movieTitle }) => {
   const url = 'https://image.tmdb.org/t/p/w500/'
   
   return (
-  	<View
-  		style={{
-  			backgroundColor: 'green'
-  	}}>
-  		<View style={{ flexDirection: 'column', flex: 2 }}>
-			<Text style={{ fontSize: 16, fontWeight: 'bold' }}>{ movieTitle }</Text>
-        	<Text style={{ fontSize: 16, fontWeight: 'bold' }}>8.3</Text>
-        	<TagList />
-  		</View>
+  	<View>
+      <Text style={{ fontSize: 16, fontWeight: 'bold' }}>{ movieTitle }</Text>
+    	<Text style={{ fontSize: 16, fontWeight: 'bold' }}>8.3</Text>
+    	<TagList />
     </View>
   );
 }

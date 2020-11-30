@@ -9,19 +9,12 @@ import movies from '../../utils/popular.json';
 
 const moviesList = movies.results
 
-const style = StyleSheet.create({
-  
-})
 
 const MovieCardList = () => {
   return (
-  	<View 
-      style={{
-      backgroundColor: 'red',
-      paddingHorizontal: 20, 
-      paddingVertical: 50
-    }}>
-        <FlatList 
+  	<View style={style.movieCardList}>
+        <FlatList
+          showsVerticalScrollIndicator={false} 
         	data = { moviesList }
         	renderItem = { ({item}) => 
         		<MovieCard 
@@ -34,5 +27,12 @@ const MovieCardList = () => {
     </View>
   );
 }
+
+const style = StyleSheet.create({
+  movieCardList: {
+    paddingHorizontal: 20, 
+    paddingVertical: 30
+  }  
+})
 
 export default MovieCardList

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FlatList, StyleSheet, Text } from 'react-native';
+import { StyleSheet, Text } from 'react-native';
 
 import movieDetails from '../../utils/movieDetails.json'
 
@@ -7,8 +7,8 @@ const tags = movieDetails.genres
 
 const style = StyleSheet.create({
 	tagItem: {
-		fontSize: 14,
-		paddingRight: 5,
+		fontSize: 13,
+		paddingRight: 5
 	},
 })
 

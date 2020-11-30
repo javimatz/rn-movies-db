@@ -9,19 +9,24 @@ import movieDetails from '../../utils/movieDetails.json'
 
 const tags = movieDetails.genres
 
-const style = StyleSheet.create({
-	
-})
 
 const TagList = () => {
   return (
-  	<FlatList
-		data={tags}
-		renderItem={({item}) => <TagItem tagName = {item.name} />}
-		keyExtractor = { (item) => item.id.toString() }
-		horizontal
-	/>
+  	<View style={style.tagList}>
+  	{
+  		tags.map((item) => <TagItem tagName={item.name} />)
+  	}
+  	</View>
+  	
   );
 }
+
+const style = StyleSheet.create({
+	tagList: {
+		flexDirection: 'row', 
+		flexWrap: 'wrap', 
+		width: '80%'
+	}		
+})
 
 export default TagList
