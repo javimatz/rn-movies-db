@@ -10,7 +10,7 @@ const style = StyleSheet.create({
 const BackButton = () => {
   return (
 	<TouchableWithoutFeedback>
-		<Ionicons name="ios-arrow-back" size={32} color="#000" />
+		<Ionicons name="ios-arrow-back" size={28} color="#000" />
 	</TouchableWithoutFeedback>
   );
 }
