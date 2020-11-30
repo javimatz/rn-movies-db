@@ -2,6 +2,11 @@ import React, { Fragment } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 const style = StyleSheet.create({
+  headerText: {
+    fontSize: 14,
+    paddingVertical: 15,
+    textAlign: 'center'
+  },
   headerTitle: {
     fontSize: 20,
     fontWeight: 'bold',
@@ -10,11 +15,6 @@ const style = StyleSheet.create({
     backgroundColor: 'orange',
     height: 5,
     width: 40,
-  },
-  headerText: {
-    fontSize: 14,
-    paddingVertical: 10,
-    textAlign: 'center'
   },
 })
 

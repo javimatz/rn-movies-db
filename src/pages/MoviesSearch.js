@@ -9,7 +9,6 @@ const MoviesSearch = () => {
   return (
   	<View>
   		<PageHeader />
-      <SearchForm />
       <MovieCardList />
     </View>
   );

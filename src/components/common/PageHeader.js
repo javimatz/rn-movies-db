@@ -3,6 +3,7 @@ import {StyleSheet, View } from 'react-native';
 
 import HeaderTitle from './HeaderTitle';
 import BackButton from './BackButton';
+import SearchForm from './SearchForm';
 
 const PageHeader = ({ }) => {
 	return (
@@ -16,27 +17,22 @@ const PageHeader = ({ }) => {
 					headerText="We'll help you find your favorite movies. Discover wonderfull movies." 
 				/>
 			</View>
+			<SearchForm />
 		</View>
 	);
 }
 
 const style = StyleSheet.create({
   pageHeader: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    backgroundColor: 'yellow'
+  	paddingHorizontal: 20
   },
-  headerTitle: {
-    backgroundColor: 'red',
-    flexBasis: '90%'
+  headerTitle: {	
+  	paddingHorizontal: 10,
   },
   backButton: {
-  	backgroundColor: 'pink',
-  	left: 20,
-  	paddingHorizontal: 10,
+  	paddingLeft: 20,
   	position: 'absolute',
-  	zIndex: 1
-  } 
+  },
 })
 
 export default PageHeader
