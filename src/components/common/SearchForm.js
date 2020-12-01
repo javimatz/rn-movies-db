@@ -3,14 +3,6 @@ import { StyleSheet, TextInput, TouchableWithoutFeedback, View } from 'react-nat
 
 import { Ionicons } from '@expo/vector-icons';
 
-const style = StyleSheet.create({
-  searchForm: {
-    flexDirection: 'row',
-    backgroundColor: '#F0F0F0',
-    paddingHorizontal: 10,
-    borderRadius: 50
-  }
-})
 
 const SearchForm = () => {
   return (
@@ -28,5 +20,14 @@ const SearchForm = () => {
     </View>
   );
 }
+
+const style = StyleSheet.create({
+  searchForm: {
+    flexDirection: 'row',
+    backgroundColor: '#F0F0F0',
+    paddingHorizontal: 10,
+    borderRadius: 50
+  }
+})
 
 export default SearchForm

@@ -7,11 +7,19 @@ import SearchForm from '../components/common/SearchForm';
 
 const MoviesSearch = () => {
   return (
-  	<View>
+  	<View style={style.moviesSearch}>
+      <View>
   		<PageHeader />
+      </View>
       <MovieCardList />
     </View>
   );
 }
+
+const style = StyleSheet.create({
+  moviesSearch: {
+    flex: 1
+  }
+})
 
 export default MoviesSearch

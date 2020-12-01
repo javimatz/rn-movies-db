@@ -30,8 +30,9 @@ const MovieCardList = () => {
 
 const style = StyleSheet.create({
   movieCardList: {
+    flex: 1,
     paddingHorizontal: 20, 
-    paddingVertical: 30
+    paddingVertical: 30,
   }  
 })
 
