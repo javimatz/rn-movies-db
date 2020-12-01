@@ -1,4 +1,3 @@
-// https://api.themoviedb.org/3/discover/movie?api_key=330f085e0745d5b685811654fe129dc3&certification_country=US&certification=R&sort_by=vote_average.desc
 {
   "page": 1,
   "total_results": 10000,
