@@ -18,12 +18,12 @@ const style = StyleSheet.create({
   },
 })
 
-const HeaderTitle = ({ headerTitle, headerText }) => {
+const HeaderTitle = ({ headerTitle, headline }) => {
   return (
     <View style={{ alignItems: 'center' }}>		
       <Text style = {style.headerTitle}>{headerTitle}</Text>
     	<Text style = {style.headerTitleBar} />
-      <Text style = {style.headerText}>{headerText}</Text>
+      {headline && <Text style = {style.headerText}>{headline}</Text>}
     </View>		
   );
 }

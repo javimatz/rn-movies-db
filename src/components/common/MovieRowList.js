@@ -14,7 +14,7 @@ const style = StyleSheet.create({
   }
 })
 
-const ImageCardList = ({title, data, imageWithTitle}) => {
+const MovieRowList = ({title, data, imageWithTitle}) => {
 
   // Images API
   const url = 'https://image.tmdb.org/t/p/w500/'
@@ -38,4 +38,4 @@ const ImageCardList = ({title, data, imageWithTitle}) => {
   );
 }
 
-export default ImageCardList
+export default MovieRowList

@@ -2,15 +2,28 @@ import React from 'react';
 import { ScrollView, StyleSheet, View } from 'react-native';
 
 // Components
-import ImageCardList from '../components/common/ImageCardList'
+import MovieRowList from '../components/common/MovieRowList'
 import HeaderTitle from '../components/common/HeaderTitle'
 import Navbar from '../components/MoviesHome/Navbar'
 
 // Movies JSON Data
 import popularMovies from '../utils/popular.json'
-import topMovies from '../utils/topMovies.json'
-import discoverMovies from '../utils/discoverMovies.json'
 
+// Movies Lists
+const popular = popularMovies.results
+
+const MoviesHome = () => {
+  
+  return (
+      <ScrollView style={style.screenContainer}>
+        <Navbar />
+        <HeaderTitle title='Movies' />
+        <MovieRowList title='Popular' data={popular} />
+        <MovieRowList title='Top Rated' data={popular} />
+        <MovieRowList title='Must Watch' data={popular} />
+      </ScrollView>
+  );
+}
 
 const style = StyleSheet.create({
   screenContainer: {
@@ -18,23 +31,5 @@ const style = StyleSheet.create({
     padding: 10,
   },
 })
-
-const MoviesHome = () => {
-  
-  // Movies Lists
-  const popular = popularMovies.results
-  const top = topMovies.results
-  const discover = discoverMovies.results
-  
-  return (
-      <ScrollView style={style.screenContainer}>
-        <Navbar />
-        <HeaderTitle title='Movies' />
-        <ImageCardList title='Popular' data={popular} />
-        <ImageCardList title='Top Rated' data={top} />
-        <ImageCardList title='Must Watch' data={discover} />
-      </ScrollView>
-  );
-}
 
 export default MoviesHome

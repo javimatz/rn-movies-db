@@ -5,7 +5,7 @@ import HeaderTitle from './HeaderTitle';
 import BackButton from './BackButton';
 import SearchForm from './SearchForm';
 
-const PageHeader = ({ }) => {
+const PageHeader = ({ headerTitle, headline, searchFormVisible }) => {
 	return (
 		<View style={style.pageHeader}>
 			<View style={style.backButton}>
@@ -13,11 +13,11 @@ const PageHeader = ({ }) => {
 			</View>
 			<View style={style.headerTitle}>
 				<HeaderTitle 
-					headerTitle='Search Movies' 
-					headerText="We'll help you find your favorite movies. Discover wonderfull movies." 
+					headerTitle={headerTitle} 
+					headline={headline} 
 				/>
 			</View>
-			<SearchForm />
+			{ searchFormVisible && <SearchForm />}
 		</View>
 	);
 }

@@ -4,7 +4,7 @@ import { ScrollView, StyleSheet, View } from 'react-native';
 
 
 // Components
-import ImageCardList from '../components/common/ImageCardList'
+import MovieRowList from '../components/common/MovieRowList'
 import CastingList from '../components/MovieDetail/CastingList'
 import PosterBackground from '../components/MovieDetail/PosterBackground'
 import Overview from '../components/MovieDetail/Overview'
@@ -46,7 +46,7 @@ const MovieDetailsScreen = () => {
 			<Overview text={overview} />
 			<CastingList title='Casting' data={casting} imageWithTitle />
 			<MovieImagesList />
-			<ImageCardList title='Recommendations' data={movieRecom} imageWithTitle />
+			<MovieRowList title='Recommendations' data={movieRecom} imageWithTitle />
 		</ScrollView>
 
 	);

@@ -3,14 +3,15 @@ import { StyleSheet, View } from 'react-native';
 
 import PageHeader from '../components/common/PageHeader';
 import MovieCardList from '../components/Movies/MovieCardList';
-import SearchForm from '../components/common/SearchForm';
 
 const MoviesSearch = () => {
   return (
   	<View style={style.moviesSearch}>
-      <View>
-  		<PageHeader />
-      </View>
+    	<PageHeader 
+        headerTitle = 'Search Movies'
+        headline = "We'll help you find your favorite movies. Discover wonderfull movies."
+        searchFormVisible = 'true'
+      />
       <MovieCardList />
     </View>
   );

@@ -13,7 +13,7 @@ const tags = movieDetails.genres
 const TagList = () => {
   return (
   	<View style={style.tagList}>
-      { tags.map((item, index) => <TagItem tagName={item.name} />)}
+      { tags.map((item, index) => <TagItem key={item.id} tagName={item.name} />)}
     </View>
   );
 }

@@ -20,7 +20,7 @@ const style = StyleSheet.create({
   }
 })
 
-const ImageCardList = ({title, data, imageWithTitle}) => {
+const ImageCardList2 = ({title, data, imageWithTitle}) => {
 
   // Images API
   const url = 'https://image.tmdb.org/t/p/w500/'
@@ -58,4 +58,4 @@ const ImageCardList = ({title, data, imageWithTitle}) => {
   );
 }
 
-export default ImageCardList
+export default ImageCardList2
