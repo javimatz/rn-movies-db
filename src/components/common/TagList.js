@@ -12,18 +12,28 @@ const tags = movieDetails.genres
 
 const TagList = () => {
   return (
-  	<View>
-      <FlatList
-          data = { tags }
-          numColumns = {2}
-          renderItem = { ({item}) => 
-            <TagItem tagName={item.name} /> 
-          }
-          keyExtractor = { (item) => item.id.toString() }
-        />
+  	<View style={style.tagList}>
+      { tags.map((item, index) => <TagItem tagName={item.name} />)}
     </View>
-  	
   );
 }
+
+const style = StyleSheet.create({
+  tagList: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    width: '80%',
+  }
+})
+
+ 
+// <FlatList
+//   data = { tags }
+//   numColumns = {2}
+//   renderItem = { ({item}) => 
+//     <TagItem tagName={item.name} /> 
+//   }
+//   keyExtractor = { (item) => item.id.toString() }
+// />
 
 export default TagList
