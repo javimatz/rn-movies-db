@@ -2,14 +2,12 @@ import React, { Fragment } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 const style = StyleSheet.create({
-  headline: {
-    fontSize: 14,
-    paddingVertical: 15,
-    paddingHorizontal: 20,
-    textAlign: 'center'
-  },
+  homePageTitle: {
+  	alignItems: 'flex-start',
+  	paddingTop: 20
+  },  
   headerTitle: {
-    fontSize: 20,
+    fontSize: 28,
     fontWeight: 'bold',
   },
   headerTitleBar: {
@@ -19,9 +17,9 @@ const style = StyleSheet.create({
   },
 })
 
-const HeaderTitle = ({ headerTitle, headline }) => {
+const HomePageTitle = ({ headerTitle, headline }) => {
   return (
-    <View style={{ alignItems: 'center' }}>		
+    <View style={style.homePageTitle}>		
       <Text style = {style.headerTitle}>{headerTitle}</Text>
     	<Text style = {style.headerTitleBar} />
       {headline && <Text style = {style.headline}>{headline}</Text>}
@@ -29,6 +27,4 @@ const HeaderTitle = ({ headerTitle, headline }) => {
   );
 }
 
-// { headline && <View style={{ padding: 10 }}><Text>{headline}</Text></View> }
-
-export default HeaderTitle
+export default HomePageTitle

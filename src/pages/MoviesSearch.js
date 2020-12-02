@@ -3,15 +3,18 @@ import { StyleSheet, View } from 'react-native';
 
 import PageHeader from '../components/common/PageHeader';
 import MovieCardList from '../components/Movies/MovieCardList';
+import SearchForm from '../components/common/SearchForm';
 
 const MoviesSearch = () => {
   return (
   	<View style={style.moviesSearch}>
-    	<PageHeader 
+      <PageHeader 
         headerTitle = 'Search Movies'
         headline = "We'll help you find your favorite movies. Discover wonderfull movies."
-        searchFormVisible = 'true'
       />
+    	<View style={{ paddingHorizontal: 20 }}>
+        <SearchForm />
+      </View>
       <MovieCardList />
     </View>
   );
@@ -19,7 +22,7 @@ const MoviesSearch = () => {
 
 const style = StyleSheet.create({
   moviesSearch: {
-    flex: 1
+    flex: 1,
   }
 })
 

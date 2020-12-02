@@ -3,7 +3,7 @@ import { ScrollView, StyleSheet, View } from 'react-native';
 
 // Components
 import MovieRowList from '../components/common/MovieRowList'
-import HeaderTitle from '../components/common/HeaderTitle'
+import HomePageTitle from '../components/common/HomePageTitle'
 import Navbar from '../components/MoviesHome/Navbar'
 
 // Movies JSON Data
@@ -17,7 +17,7 @@ const MoviesHome = () => {
   return (
       <ScrollView style={style.screenContainer}>
         <Navbar />
-        <HeaderTitle headerTitle='Movies' />
+        <HomePageTitle headerTitle='Movies' />
         <MovieRowList title='Popular' data={popular} />
         <MovieRowList title='Top Rated' data={popular} />
         <MovieRowList title='Must Watch' data={popular} />
