@@ -27,7 +27,6 @@ const MoviesHome = () => {
 
 const style = StyleSheet.create({
   screenContainer: {
-    paddingBottom: 50,
     padding: 10,
   },
 })

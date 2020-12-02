@@ -18,7 +18,7 @@ const MovieRowList = ({title, data, imageWithTitle}) => {
   // Images API
   const url = 'https://image.tmdb.org/t/p/w500/'
   return (
-  	<View>
+  	<View style={{ paddingVertical: 15 }}>
       <CardListMenu title={title} />
 	  	<FlatList
   		  data={data}

@@ -5,7 +5,8 @@ const style = StyleSheet.create({
 	cardListMenu: {
 		alignItems: 'flex-end',
 		flexDirection: 'row',
-		justifyContent: 'space-between'
+		justifyContent: 'space-between',
+		paddingBottom: 5
 	},
 	listTitle: {
 	    fontSize: 20,
