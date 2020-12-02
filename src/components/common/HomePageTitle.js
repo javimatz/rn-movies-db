@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 const style = StyleSheet.create({
   homePageTitle: {
   	alignItems: 'flex-start',
-  	paddingTop: 20
+  	paddingVertical: 20
   },  
   headerTitle: {
     fontSize: 28,

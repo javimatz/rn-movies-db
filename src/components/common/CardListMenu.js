@@ -1,20 +1,28 @@
 import React from 'react';
-import { Button, StyleSheet, Text, View } from 'react-native';
+import { Button, StyleSheet, Text, TouchableWithoutFeedback, View } from 'react-native';
 
 const style = StyleSheet.create({
+	cardListMenu: {
+		alignItems: 'flex-end',
+		flexDirection: 'row',
+		justifyContent: 'space-between'
+	},
 	listTitle: {
 	    fontSize: 20,
 	    fontWeight: 'bold',
-	    paddingLeft: 5,
-	    paddingTop: 20,
-	},  
+	},
+	moreLink: {
+		color: 'orange',
+		fontSize: 16,
+		fontWeight: 'bold',
+	}  
 })
 
 const CardListMenu = ({ title }) => {
   return (
-  	<View>
+  	<View style={style.cardListMenu}>
         <Text style={style.listTitle}>{title}</Text>
-        <Button title='More' />
+        <Text style={style.moreLink}>More</Text>
     </View>
   );
 }
