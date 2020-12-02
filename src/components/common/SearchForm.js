@@ -2,14 +2,13 @@ import React from 'react';
 import { StyleSheet, TextInput, TouchableWithoutFeedback, View } from 'react-native';
 
 import { Ionicons } from '@expo/vector-icons';
+import SearchButton from './SearchButton';
 
 
 const SearchForm = () => {
   return (
   	<View style={style.searchForm}>
-        <TouchableWithoutFeedback>
-          <Ionicons name="ios-search" size={28} color="#000" />
-        </TouchableWithoutFeedback>
+        <SearchButton />
         <TextInput
           style={{ 
             color: '#AAA',

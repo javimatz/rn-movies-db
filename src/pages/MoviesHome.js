@@ -17,7 +17,7 @@ const MoviesHome = () => {
   return (
       <ScrollView style={style.screenContainer}>
         <Navbar />
-        <HeaderTitle title='Movies' />
+        <HeaderTitle headerTitle='Movies' />
         <MovieRowList title='Popular' data={popular} />
         <MovieRowList title='Top Rated' data={popular} />
         <MovieRowList title='Must Watch' data={popular} />

@@ -1,17 +1,23 @@
 import React from 'react';
 import { Button, StyleSheet, View } from 'react-native';
 
-const style = StyleSheet.create({
-
-})
+import SearchButton from '../common/SearchButton'
+import MenuButton from '../common/MenuButton'
 
 const Navbar = () => {
   return (
-  	<View>
-        <Button title='Menu Link' />
-        <Button title='Search Link' />
+  	<View style={style.navbar} >
+        <MenuButton />
+        <SearchButton />
     </View>
   );
 }
+
+const style = StyleSheet.create({
+	navbar: {
+    	flexDirection: 'row',
+    	justifyContent: 'space-between'
+  	}
+})
 
 export default Navbar
