@@ -1,16 +1,16 @@
 import React, { Fragment } from 'react';
 import { FlatList, Image, StyleSheet, Text, View, } from 'react-native';
-import CardListMenu from '../common/CardListMenu'
 
 const style = StyleSheet.create({
   img: {
     borderRadius: 10,
-    height: 200,
-    margin: 5,
-    width: 120,
+    height: 100,
+    marginTop: 10,
+    marginRight: 10,
+    width: 80,
   },
   imgContainer: {
-    width: 130,
+    
   }
 })
 
@@ -20,7 +20,7 @@ const CastingList = ({title, data, imageWithTitle}) => {
   const url = 'https://image.tmdb.org/t/p/w500/'
   return (
   	<View>
-      <CardListMenu title={title} />
+      <Text style={{ fontSize: 18, fontWeight: 'bold' }}>{title}</Text>
 	  	<FlatList
   		  data={data}
   		  renderItem={ ({item}) => {		    
