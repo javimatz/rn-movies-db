@@ -8,7 +8,7 @@ import MovieRowList from '../components/common/MovieRowList'
 import CastingList from '../components/MovieDetail/CastingList'
 import PosterBackground from '../components/MovieDetail/PosterBackground'
 import Overview from '../components/MovieDetail/Overview'
-import TagList from '../components/common/TagList'
+import TagListWithBorder from '../components/common/TagListWithBorder'
 import MovieImagesList from '../components/MovieDetail/MovieImagesList'
 
 // API data
@@ -33,7 +33,7 @@ const movieRecom = movieRecommendations.results
 // Styles
 const style = StyleSheet.create({
 	screenContainer: {
-	    
+	    backgroundColor: '#000'
 	},
 })
 
@@ -41,11 +41,23 @@ const MovieDetailsScreen = () => {
 	return (
 		<ScrollView style={style.screenContainer}>	
 			<PosterBackground />
-			<TagList />			        
-			<Overview text={overview} />
-			<CastingList title='Casting' data={casting} imageWithTitle />
-			<MovieImagesList />
-			<MovieRowList title='Recommendations' data={movieRecom} imageWithTitle />
+			<View 
+				style={{ 
+					padding: 10,
+					borderRadius: 20,
+					backgroundColor: '#FFF'
+				}}
+			>
+				<TagListWithBorder />	
+				<View style={{ paddingVertical: 10 }}>		        
+					<Overview text={overview} />
+				</View>		        
+				<View style={{ marginTop: 10 }}>
+					<CastingList title='Cast' data={casting} imageWithTitle />
+				</View>
+				<MovieImagesList />
+				<MovieRowList title='Recommendations' data={movieRecom} imageWithTitle />
+			</View>
 		</ScrollView>
 
 	);
