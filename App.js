@@ -11,7 +11,6 @@ const style = StyleSheet.create({
   appContainer: {
     backgroundColor: '#FFF',
     flex: 1,
-    paddingTop: StatusBar.currentHeight,
   }
 })
 
@@ -19,7 +18,7 @@ const App = () => {
   return (
   	<View style={style.appContainer}>
         <StatusBar backgroundColor="#333"  />
-        <MoviesHome />
+        <MovieDetail />
     </View>
   );
 }
