@@ -1,5 +1,5 @@
-import React, { Fragment } from 'react';
-import { StyleSheet, Text } from 'react-native';
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 
 const style = StyleSheet.create({
 
@@ -7,10 +7,18 @@ const style = StyleSheet.create({
 
 const Overview = ({ text }) => {
   return (
-  	<Fragment>
-  		<Text>Overview</Text>
-		<Text>{text}</Text>
-  	</Fragment>
+  	<View>
+  		<Text style={{ 
+  			fontSize: 18, 
+  			fontWeight: 'bold', 
+  		}}>Overview</Text>
+		<Text
+			style={{
+				fontSize: 14,
+				marginTop: 5
+			}}
+		>{text}</Text>
+  	</View>
 
   );
 }
