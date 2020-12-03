@@ -33,7 +33,8 @@ const movieRecom = movieRecommendations.results
 // Styles
 const style = StyleSheet.create({
 	screenContainer: {
-	    backgroundColor: '#000'
+	    backgroundColor: '#000',
+
 	},
 })
 
@@ -55,8 +56,12 @@ const MovieDetailsScreen = () => {
 				<View style={{ marginTop: 10 }}>
 					<CastingList title='Cast' data={casting} imageWithTitle />
 				</View>
-				<MovieImagesList />
-				<MovieRowList title='Recommendations' data={movieRecom} imageWithTitle />
+				<View style={{ marginVertical: 20 }}>
+					<MovieImagesList />
+				</View>
+				<View style={{ }}>
+					<MovieRowList title='Recommendations' data={movieRecom} imageWithTitle={true} />
+				</View>
 			</View>
 		</ScrollView>
 

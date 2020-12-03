@@ -10,7 +10,7 @@ const style = StyleSheet.create({
     width: 80,
   },
   imgContainer: {
-    
+    width: 100
   }
 })
 
@@ -27,6 +27,7 @@ const CastingList = ({title, data, imageWithTitle}) => {
             return (
               <View style={style.imgContainer}>
                 <Image source={{ uri: url.concat(item.profile_path) }} style={style.img} /> 
+                <Text style={{ color: '#000' }}>{item.name}</Text>
               </View>
             )
           	}}

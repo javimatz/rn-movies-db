@@ -26,6 +26,7 @@ const MovieRowList = ({title, data, imageWithTitle}) => {
             return (
               <View style={style.imgContainer}>
                 <Image source={{ uri: url.concat(item.poster_path) }} style={style.img} /> 
+                {imageWithTitle && <Text>{item.title}</Text>}
               </View>
             )
           }

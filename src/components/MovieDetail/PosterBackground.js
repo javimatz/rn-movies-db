@@ -17,7 +17,7 @@ const title = movieDetails.original_title
 const PosterBackground = () => {
 	return (
 		<View style={{
-			height: '30%',
+			height: '20%',
 		}}>
 			<ImageBackground 
 				source={{uri: poster}} 

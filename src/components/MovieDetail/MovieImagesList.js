@@ -11,9 +11,10 @@ const movieImg = movieImages.backdrops
 const style = StyleSheet.create({
 	img: {
     borderRadius: 10,
-    height: 200,
-    margin: 5,
-    width: 120,
+    height: 110,
+    marginRight: 5,
+    marginTop: 5,
+    width: 180,
   },
 })
 
@@ -21,7 +22,7 @@ const MovieImageList = () => {
   
   return (
   	<Fragment>
-	  	<Text>Images</Text>
+	  	<Text style={{ fontSize: 18, fontWeight: 'bold' }}>Images</Text>
 		<FlatList 
 			data={movieImg}
 			renderItem={({item}) => {
