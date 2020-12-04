@@ -17,20 +17,20 @@ const MovieRowList = ({title, data, imageWithTitle, hideMoreButton}) => {
 
   // Images API
   const url = 'https://image.tmdb.org/t/p/w500/'
+
+  const renderIt = ({item}) => ( 
+    <View style={style.imgContainer}>
+      <Image source={{ uri: url.concat(item.poster_path) }} style={style.img} /> 
+      {imageWithTitle && <Text>{item.title}</Text>}
+    </View> 
+  )
+
   return (
   	<View style={{ paddingVertical: 15 }}>
       <CardListMenu title={title} hideMoreButton={hideMoreButton} />
 	  	<FlatList
   		  data={data}
-  		  renderItem={ ({item}) => {		    
-            return (
-              <View style={style.imgContainer}>
-                <Image source={{ uri: url.concat(item.poster_path) }} style={style.img} /> 
-                {imageWithTitle && <Text>{item.title}</Text>}
-              </View>
-            )
-          }
-  		  }
+  		  renderItem={renderIt}
   		  keyExtractor={ (item) => item.id.toString()}
   		  horizontal
   		/>
