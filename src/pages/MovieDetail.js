@@ -35,7 +35,6 @@ const movieRecom = movieRecommendations.results
 const style = StyleSheet.create({
 	screenContainer: {
 	    backgroundColor: '#000',
-
 	},
 })
 

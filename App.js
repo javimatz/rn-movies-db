@@ -18,7 +18,7 @@ const App = () => {
   return (
   	<View style={style.appContainer}>
         <StatusBar backgroundColor="#333"  />
-        <MovieDetail />
+        <MoviesHome />
     </View>
   );
 }
