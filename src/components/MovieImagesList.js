@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { FlatList, Image, StyleSheet, Text, View } from 'react-native';
 
-import movieImages from '../../utils/movieImages.json'
+import movieImages from '../utils/movieImages.json'
 const apiImagesURL = 'https://image.tmdb.org/t/p/w500'
 
 // Movie Images

@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import TagList from '../common/TagList';
+import TagList from './common/TagList';
 
 
 const MovieCard = ({ movieTitle }) => {

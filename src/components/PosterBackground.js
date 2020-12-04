@@ -1,10 +1,10 @@
 import React from 'react';
 import { ImageBackground, StyleSheet, Text, View } from 'react-native';
 
-import BackButton from '../common/BackButton'
-import MovieRate from '../common/MovieRate'
+import BackButton from './common/BackButton'
+import MovieRate from './common/MovieRate'
 
-import movieDetails from '../../utils/movieDetails.json'
+import movieDetails from '../utils/movieDetails.json'
 
 
 // Images API

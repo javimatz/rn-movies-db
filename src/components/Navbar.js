@@ -1,8 +1,8 @@
 import React from 'react';
 import { Button, StyleSheet, View } from 'react-native';
 
-import SearchButton from '../common/SearchButton'
-import MenuButton from '../common/MenuButton'
+import SearchButton from './common/SearchButton'
+import MenuButton from './common/MenuButton'
 
 const Navbar = () => {
   return (

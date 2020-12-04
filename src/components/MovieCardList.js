@@ -5,7 +5,7 @@ import {FlatList, StyleSheet, View } from 'react-native';
 import MovieCard from './MovieCard';
 
 // JSON Data
-import movies from '../../utils/popular.json';
+import movies from '../utils/popular.json';
 
 const moviesList = movies.results
 

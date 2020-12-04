@@ -23,6 +23,7 @@ const style = StyleSheet.create({
   tagList: {
     flexDirection: 'row',
     flexWrap: 'wrap',
+    marginTop: 15
   },
   tagItemContainer: {
     borderColor: '#888',

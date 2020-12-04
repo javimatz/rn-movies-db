@@ -5,11 +5,12 @@ import { ScrollView, StyleSheet, View } from 'react-native';
 
 // Components
 import MovieRowList from '../components/common/MovieRowList'
-import CastingList from '../components/MovieDetail/CastingList'
-import PosterBackground from '../components/MovieDetail/PosterBackground'
-import Overview from '../components/MovieDetail/Overview'
+import CastingList from '../components/CastingList'
+import PosterBackground from '../components/PosterBackground'
+import Overview from '../components/Overview'
 import TagListWithBorder from '../components/common/TagListWithBorder'
-import MovieImagesList from '../components/MovieDetail/MovieImagesList'
+import MovieImagesList from '../components/MovieImagesList'
+import PlayButton from '../components/common/PlayButton'
 
 // API data
 import movieDetails from '../utils/movieDetails.json'
@@ -49,6 +50,8 @@ const MovieDetailsScreen = () => {
 					backgroundColor: '#FFF'
 				}}
 			>
+				
+				<PlayButton />
 				<TagListWithBorder />	
 				<View style={{ paddingVertical: 10 }}>		        
 					<Overview text={overview} />

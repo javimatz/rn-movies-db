@@ -4,7 +4,7 @@ import { ScrollView, StyleSheet, View } from 'react-native';
 // Components
 import MovieRowList from '../components/common/MovieRowList'
 import HomePageTitle from '../components/common/HomePageTitle'
-import Navbar from '../components/MoviesHome/Navbar'
+import Navbar from '../components/Navbar'
 
 // Movies JSON Data
 import popularMovies from '../utils/popular.json'
