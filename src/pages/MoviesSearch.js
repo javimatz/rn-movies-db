@@ -23,6 +23,7 @@ const MoviesSearch = () => {
 const style = StyleSheet.create({
   moviesSearch: {
     flex: 1,
+    paddingTop: 20
   }
 })
 

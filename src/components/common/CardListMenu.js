@@ -19,11 +19,11 @@ const style = StyleSheet.create({
 	}  
 })
 
-const CardListMenu = ({ title }) => {
+const CardListMenu = ({ title, hideMoreButton }) => {
   return (
   	<View style={style.cardListMenu}>
         <Text style={style.listTitle}>{title}</Text>
-        <Text style={style.moreLink}>More</Text>
+        { hideMoreButton || <Text style={style.moreLink}>More</Text> }
     </View>
   );
 }

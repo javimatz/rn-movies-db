@@ -13,13 +13,13 @@ const style = StyleSheet.create({
   }
 })
 
-const MovieRowList = ({title, data, imageWithTitle}) => {
+const MovieRowList = ({title, data, imageWithTitle, hideMoreButton}) => {
 
   // Images API
   const url = 'https://image.tmdb.org/t/p/w500/'
   return (
   	<View style={{ paddingVertical: 15 }}>
-      <CardListMenu title={title} />
+      <CardListMenu title={title} hideMoreButton={hideMoreButton} />
 	  	<FlatList
   		  data={data}
   		  renderItem={ ({item}) => {		    

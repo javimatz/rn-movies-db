@@ -60,7 +60,12 @@ const MovieDetailsScreen = () => {
 					<MovieImagesList />
 				</View>
 				<View style={{ }}>
-					<MovieRowList title='Recommendations' data={movieRecom} imageWithTitle={true} />
+					<MovieRowList 
+						title='Recommendations' 
+						data={movieRecom} 
+						imageWithTitle={true} 
+						hideMoreButton
+					/>
 				</View>
 			</View>
 		</ScrollView>
